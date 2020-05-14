@@ -1,0 +1,21 @@
+.slides-navigation {
+	z-index: 6;
+	
+	&__prev {
+		height: 47px;
+		width: 47px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		left: 20px;
+		background-image: url(./img/icons/prev.png);
+	}
+
+	&__next {
+		height: 47px;
+		width: 47px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		right: 20px;
+		background-image: url(./img/icons/next.png);
+	}
+}

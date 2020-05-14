@@ -1,0 +1,13 @@
+const webpack = require('webpack')
+
+{
+                test: /\.js$/i,
+                use: "imports-loader?$=jquery"
+            }
+
+plugins: [
+		new webpack.ProvidePlugin({
+		  $: "jquery",
+		  jQuery: "jquery"
+		})
+	]
