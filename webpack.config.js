@@ -1,4 +1,5 @@
 const path = require('path')
+//const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const postCSSPlugins = [
 	require('postcss-import'),
@@ -8,11 +9,14 @@ const postCSSPlugins = [
 ]
 
 module.exports = {
-	entry: './js/script.js', // first file to run
+	entry: './app/js/script.js', // first file to run
 	output: {
 		filename: 'bundled.js',
-		path: path.resolve(__dirname, 'js')
+		path: path.resolve(__dirname, 'app/js')
 	},
+	/*plugins: [new HtmlWebpackPlugin({
+		template: 
+	})],*/
 	mode: 'development',
 	watch: true, //node always remains ON, so we dont have to run dev manually.
 	module: {
