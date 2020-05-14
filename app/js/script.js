@@ -1,9 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
 
-/*if (module.hot) {
-	module.hot.accept();
-}*/
+if (module.hot) {
+	module.hot.accept()
+}
 
 $(document).ready(function () {
 

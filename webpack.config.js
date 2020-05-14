@@ -14,11 +14,21 @@ module.exports = {
 		filename: 'bundled.js',
 		path: path.resolve(__dirname, 'app/js')
 	},
+	devServer: {
+		before: function (app, server) {
+			server._watch('./app/**/*.html')
+		},
+		contentBase: path.join(__dirname, 'app'),
+		hot: true, //inject css and js code without refresh
+		port: 4000,
+		host: '0.0.0.0'
+	},
 	/*plugins: [new HtmlWebpackPlugin({
 		template: 
 	})],*/
 	mode: 'development',
-	watch: true, //node always remains ON, so we dont have to run dev manually.
+	devtool: 'none',
+	//watch: true, //node always remains ON, so we dont have to run dev manually.
 	module: {
 		rules: [
 			{
