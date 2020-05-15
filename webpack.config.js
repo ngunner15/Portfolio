@@ -28,7 +28,7 @@ module.exports = {
 		template: 
 	})],*/
 	mode: 'development',
-	devtool: 'none',
+	//devtool: 'none',
 	//watch: true, //node always remains ON, so we dont have to run dev manually.
 	module: {
 		rules: [
