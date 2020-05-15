@@ -132,7 +132,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /*if (module.hot) {
-	module.hot.accept();
+	module.hot.accept()
 }*/
 
 $(document).ready(function () {

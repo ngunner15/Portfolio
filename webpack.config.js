@@ -14,10 +14,11 @@ module.exports = {
 		filename: 'bundled.js',
 		path: path.resolve(__dirname, 'app/js')
 	},
+
 	devServer: {
-		before: function (app, server) {
-			server._watch('./app/**/*.html')
-		},
+				before: function (app, server) {
+					server._watch('./app/**/*.html')
+				},
 		contentBase: path.join(__dirname, 'app'),
 		hot: true, //inject css and js code without refresh
 		port: 4000,
