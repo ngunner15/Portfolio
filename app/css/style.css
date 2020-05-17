@@ -1,4 +1,9 @@
 @import 'base/_global';
 @import 'base/_variables';
+
 @import 'modules/_title-message';
 @import 'modules/_slides-navigation';
+@import 'modules/_section';
+@import 'modules/_skill-section';
+@import 'modules/_stats-section';
+@import 'modules/_contact-section';

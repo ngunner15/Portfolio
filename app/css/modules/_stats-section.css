@@ -1,0 +1,57 @@
+.stats-section {
+
+	&__square-item {
+		margin-top: 30px;
+	    position: relative;
+	}
+
+	&__square-inner-container {
+		position: relative;
+		padding: 50px 15px 35px;
+		text-align: center;
+		border: 2px solid #444;
+		border-top: none;
+	}
+
+	&__square-inner-container:before {
+		right: 0px;
+		content: '';
+		position: absolute;
+		top: 0px;
+		width: 30%;
+		border-bottom: 2px solid #444;
+	}
+
+	&__square-inner-container:after {
+		left: 0px;
+		content: '';
+		position: absolute;
+		top: 0px;
+		width: 30%;
+		border-bottom: 2px solid #444;
+	}
+
+	&__square-content h2 {
+		font-size: 56px;
+		margin-bottom: 10px;
+		font-weight: 400;
+		color: $mainRed;
+	}
+
+	&__square-content h3 {
+		font-size: 13px;
+		font-weight: 600;
+		margin: 0;
+	}
+
+	&__square-icon {
+		position: absolute;
+		left: 50%;
+		top: -30px;
+		width: 40%;
+		height: 60px;
+		font-size: 45px;
+		margin-left: -20%;
+		color: #444;
+	}
+}

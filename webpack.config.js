@@ -1,6 +1,6 @@
 const path = require('path')
 //const HtmlWebpackPlugin = require('html-webpack-plugin')
-
+//const webpack = require('webpack')
 const postCSSPlugins = [
 	require('postcss-import'),
 	require('postcss-simple-vars'),
@@ -35,7 +35,32 @@ module.exports = {
 			{
 				test: /\.css$/i,
 				use: ['style-loader', 'css-loader?url=false', {loader: 'postcss-loader', options: {plugins: postCSSPlugins}}]
-			}
+			},
+			/*{
+		        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+		        use: [
+		          	{
+			            loader: 'file-loader',
+			            options: {
+				            name: 'fonts/[name].[ext]',
+				            mimetype: 'application/font-woff',
+				            publicPath: '../'
+				            //outputPath: 'fonts/'
+		            	}
+		          	}
+		        ]
+	        },*/
+			/*{
+                test: /\.js$/i,
+                use: "imports-loader?$=jquery"
+            }*/
 		]
 	}
+	/*plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
+	]*/
 }
