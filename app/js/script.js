@@ -1,5 +1,5 @@
 import Typed from 'typed.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
@@ -10,6 +10,21 @@ import 'owl.carousel';
 if (module.hot) {
 	module.hot.accept()
 }
+
+$(window).on("load", function() {
+	$(".loader--inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
+	});
+
+	$(".portfolio-section__items").isotope({
+    	filter: '*',
+    	animationOptions: {
+    		duration: 1500,
+    		easing: 'linear',
+    		queue: false
+    	}
+    });
+});
 
 $(document).ready(function () {
 
@@ -80,14 +95,7 @@ $(document).ready(function () {
 
     $("[data-fancybox]").fancybox();
 
-    $(".portfolio-section__items").isotope({
-    	filter: '*',
-    	animationOptions: {
-    		duration: 1500,
-    		easing: 'linear',
-    		queue: false
-    	}
-    });
+    
 
     $(".portfolio-section__filter-a").click(function() { // if we want to use id tag then use #id instead of .class
 
@@ -107,6 +115,36 @@ $(document).ready(function () {
 
 	    return false;
     });
+
+    $("#navigation li a").click(function(e) {
+    	e.preventDefault();
+
+    	var targetElement = $(this).attr("href");
+    	var targetPosition = $(targetElement).offset().top;
+    	$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+    });
+
+    var navMain = $("#navbarNav");
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+
+    const nav = $("#navigation");
+    const navTop = nav.offset().top;
+
+    $(window).on("scroll", stickyNavigation);
+
+    function stickyNavigation () {
+    	var body = $("body");
+
+    	if($(window).scrollTop() >= navTop) {
+    		body.css("padding-top", nav.outerHeight() + "px");
+    		body.addClass("fixedNav");
+    	} else {
+    		body.css("padding-top", 0);
+    		body.removeClass("fixedNav");
+    	}
+    }
 
 });
 
