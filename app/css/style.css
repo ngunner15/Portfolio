@@ -3,7 +3,9 @@
 
 @import 'modules/_title-message';
 @import 'modules/_slides-navigation';
-@import 'modules/_section';
+@import 'modules/_about-section';
 @import 'modules/_skill-section';
 @import 'modules/_stats-section';
 @import 'modules/_contact-section';
+@import 'modules/_portfolio-section';
+@import 'modules/_copyright-section';

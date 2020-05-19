@@ -1,4 +1,3 @@
-import 'jquery';
 import Typed from 'typed.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
@@ -79,7 +78,35 @@ $(document).ready(function () {
     	}
     });
 
-    
+    $("[data-fancybox]").fancybox();
+
+    $(".portfolio-section__items").isotope({
+    	filter: '*',
+    	animationOptions: {
+    		duration: 1500,
+    		easing: 'linear',
+    		queue: false
+    	}
+    });
+
+    $(".portfolio-section__filter-a").click(function() { // if we want to use id tag then use #id instead of .class
+
+    	$(".portfolio-section__current").removeClass("portfolio-section__current");
+    	$(this).addClass("portfolio-section__current");
+
+    	var selector = $(this).attr("data-filter");
+	        
+	    $(".portfolio-section__items").isotope({
+	    	filter: selector,
+	    	animationOptions: {
+	    		duration: 1500,
+	    		easing: 'linear',
+	    		queue: false
+	    	}
+    	});
+
+	    return false;
+    });
 
 });
 

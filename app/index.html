@@ -8,6 +8,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<script src="https://kit.fontawesome.com/0de267f503.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
 </head>
 <body>
 	<div id="slides">
@@ -18,6 +21,7 @@
 		    <img src="img/slide1.jpg" alt="">
 		    <img src="img/slide2.jpg" alt="">
 		    <img src="img/slide3.jpg" alt="">
+		    <img src="img/slide4.jpg" alt="">
 		</div>
 
 		<div class="title-message">
@@ -31,17 +35,17 @@
 		</nav>
 	</div>
 
-	<div id="about" class="section">
+	<div id="about" class="about-section">
 
 		<div class="container">
 		
 			<div class="row">
 				
 				<div class="col-md-5">
-					<img class="section--about-image" src="img/mypic3.jpg">
+					<img class="about-section--about-image" src="img/mypic3.jpg">
 				</div>
 
-				<div class="col-md-7">
+				<div class="about-section--content col-md-7">
 					<h4>My name is Nisarg Vadgama</h4>
 					<p>I did my Bachelors as an Electrical Engineer from Gujarat Technological University, India. During my internship with Infosys I fell in love with programming. I have always learned different aspects of web development in my free time.</p>
 					<p>Also, my hobbies are football, cricket, reading novels and watching thriller movies.</p>
@@ -53,7 +57,7 @@
 
 	</div>
 
-	<div id="skills" class="skill-section section">
+	<div id="skills" class="skill-section about-section">
 
 		<div class="container">
 		
@@ -140,7 +144,7 @@
 
 	</div>
 
-	<div id="stats" class="stats-section section">
+	<div id="stats" class="stats-section about-section">
 
 		<div class="container">
 		
@@ -236,7 +240,7 @@
 
 	</div>
 
-	<div id="contact" class="contact-section section">
+	<div id="contact" class="contact-section about-section">
 		
 		<div class="col-md-12 text-center">
 			<p class="contact-section__heading">Like what you see?</p>
@@ -246,12 +250,311 @@
 
 	</div>
 
+	<div id="portfolio" class="portfolio-section about-section">
+
+		<div class="container">
+		
+			<div class="row">
+				
+				<div class="portfolio-section__heading">
+					<h2>PORTFOLIO</h2>
+				</div>
+
+				<div class="portfolio-section__filter">
+					
+					<ul id="filters">
+						<li><a href="#" data-filter="*" class="portfolio-section__current portfolio-section__filter-a">ALL</a></li>
+						<li><a href="#" data-filter=".me" class="portfolio-section__filter-a">Me</a></li>
+						<li><a href="#" data-filter=".apps" class="portfolio-section__filter-a">Apps</a></li>
+						<li><a href="#" data-filter=".websites" class="portfolio-section__filter-a">Websites</a></li>
+					</ul>
+
+				</div>
+
+				<div class="portfolio-section__items-container">
+					
+					<ul class="portfolio-section__items">
+						
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p1_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p1.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Manali">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p2_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p2.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Muskoka">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p3_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p3.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Wonderland">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p4_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p4.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Rohtang">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p5_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p5.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Montmorency falls">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p6_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p6.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Mangalore">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p7_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p7.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Mangalore">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="me portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/p8_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/p8.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Vadodara">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="websites portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/first_game_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/first_game.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Ball game">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="websites portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/second_game_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/second_game.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Car game">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="websites portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/canvas_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/canvas.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="canvas ball bounce">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+						<li onclick="" class="websites portfolio-section__items-li col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							
+							<div class="portfolio-section__thumbnail">
+								<img class="portfolio-section__thumbnail-image" src="img/portfolio/thumbnail/travel_website_tn.jpg">
+
+								<div class="portfolio-section__icons">
+									<a href="img/portfolio/travel_website.jpg" title="view image" class="portfolio-section__icons-search-button" data-fancybox data-caption="Travel website">
+										<i class="fa fa-search portfolio-section__icons-i"></i>
+									</a>
+
+									<a href="" target="_blank" class="portfolio-section__icons-link">
+										<i class="fa fa-link portfolio-section__icons-i"></i>
+									</a>
+								</div>
+
+								<div class="portfolio-section__image-overlay"></div>
+
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="copyright-section">
+
+		<div class="col-md-12 text-center">
+			<p>&copy; Copyright Nisarg Vadgama 2020</p>
+		</div>
+
+	</div>
+
 	<script src="js/countUp.js"></script>
 	<script src="js/countUp-jquery.js"></script>
 	<script src="js/jquery.superslides.min.js"></script>
 	<script src="js/jquery.easypiechart.min.js"></script>
+
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	
+
+	<script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 	<script src="js/script.js"></script>
 	
 	<script src="http://localhost:4000/bundled.js"></script>

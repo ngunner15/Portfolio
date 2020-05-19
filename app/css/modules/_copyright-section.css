@@ -1,0 +1,9 @@
+.copyright-section {
+	background-color: $mainGrey;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyright-section p {
+	margin: 0;
+}

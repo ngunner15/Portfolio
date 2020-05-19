@@ -55,8 +55,8 @@ module.exports = {
                 use: "imports-loader?$=jquery"
             }*/
 		]
-	}
-	/*plugins: [
+	}/*
+	plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
