@@ -7,7 +7,7 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		left: 20px;
-		background-image: url(./img/icons/prev.png);
+		background-image: url("./img/icons/prev.png");
 	}
 
 	&__next {
@@ -16,6 +16,6 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		right: 20px;
-		background-image: url(./img/icons/next.png);
+		background-image: url("./img/icons/next.png");
 	}
 }
