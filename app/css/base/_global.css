@@ -20,12 +20,25 @@ body {
 	width: 100%;
 }
 
-#navigation li {
+#navigation .nav-item {
 	padding: 0 10px;
 }
 
-#navigation li a {
+#navigation .nav-link {
 	color: #fff;
+}
+
+#navigation .nav-ul {
+	list-style-type: none;
+	position: absolute;
+	right: 10px;
+	bottom: 39%;
+}
+
+#navigation .fa, #navigation .fa:hover {
+	padding: 0 8px;
+	color: #fff;
+	text-decoration: none;
 }
 
 .navbar-brand, .navbar-brand:hover {

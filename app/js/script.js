@@ -1,8 +1,8 @@
 import Typed from 'typed.js';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel';
+import 'owl.carousel/dist/assets/owl.carousel.min.css';
+import 'owl.carousel/dist/owl.carousel.min.js';
 //import { CountUp } from 'countup.js';
 //import 'font-awesome/css/font-awesome.css';
 //import 'easy-pie-chart';
@@ -45,6 +45,10 @@ $(document).ready(function () {
 	$('.owl-carousel').owlCarousel({
 		loop: true,
 		items: 4,
+		nav: false,
+		dots: true,
+		dotsEach: true,
+		dotsData: false,
 		responsive: {
 			0:{
 				items:1
@@ -117,9 +121,14 @@ $(document).ready(function () {
     });
 
     $("#navigation li a").click(function(e) {
-    	e.preventDefault();
 
     	var targetElement = $(this).attr("href");
+
+    	if(targetElement.indexof("http") >= 0) {
+                    return;
+        }
+
+        e.preventDefault();
     	var targetPosition = $(targetElement).offset().top;
     	$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
     });
