@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-size: 14px;
 	color: #333;
@@ -30,32 +34,30 @@ body {
 	font-size: 17px;
 }
 
-/*#navigation .nav-link:hover {
+#navigation .nav-item:hover {
+	background-color: #ff3939;
+	border-radius: 5%;
+}
+
+/*#navigation .active {
 	background-color: #ff3939;
 }*/
 
-#navigation .nav-ul {
-	list-style-type: none;
-	position: absolute;
-	right: 18px;
-	bottom: 39%;
-}
 
 #navigation .fa, #navigation .fa:hover {
-	transform: scale(1.5, 1.5);
-	padding: 0 8px;
-	color: #fff;
+	transform: scale(1.25, 1.25);
 	text-decoration: none;
-}
-
-.navbar-brand, .navbar-brand:hover {
-	color: #fff;
 }
 
 .navbar-toggler-icon {
 	background: url(./img/icons/menu.png);
 	background-size: 100%;
 }
+
+/*.navbar-toggler-icon:focus {
+	outline: none;
+	text-decoration: none;
+}*/
 
 .fixedNav #navigation {
 	position: fixed;

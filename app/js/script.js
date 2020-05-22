@@ -120,7 +120,7 @@ $(document).ready(function () {
 	    return false;
     });
 
-    $("#navigation li a").click(function(e) {
+    $("#navigation .nav-link").click(function(e) {
 
     	var targetElement = $(this).attr("href");
 
@@ -132,6 +132,11 @@ $(document).ready(function () {
     	var targetPosition = $(targetElement).offset().top;
     	$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
     });
+
+    /*$("#navigation .nav-item").on("click", function(){
+   		$(".nav").find(".active").removeClass("active");
+   		$(this).addClass("active");
+	});*/
 
     var navMain = $("#navbarNav");
      navMain.on("click", "a", null, function () {
