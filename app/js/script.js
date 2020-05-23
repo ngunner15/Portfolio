@@ -24,6 +24,8 @@ $(window).on("load", function() {
     		queue: false
     	}
     });
+
+
 });
 
 $(document).ready(function () {
@@ -37,7 +39,7 @@ $(document).ready(function () {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Web Developer.", "Software Engineer.", "Electrical Engineer."],
+		strings: ["Web Developer", "Amature Footballer", "Electrical Engineer", "All-rounder Cricketer"],
 		typeSpeed: 70,
 		loop: true,
 		startDelay: 1000,
@@ -70,7 +72,7 @@ $(document).ready(function () {
     var skillsTopOffset = $(".skill-section").offset().top;
     var statsTopOffset = $(".stats-section").offset().top;
     var countUpFinished = false;
-
+    //var newCounter = parseInt($(".counter").replace(/\,/g, ''));
     $(window).scroll(function() {
     	if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
 
@@ -93,6 +95,7 @@ $(document).ready(function () {
 		    	var endVal = parseInt(element.text());
 
 		    	element.countup(endVal);
+
 	    	})
 
 	    	countUpFinished =true;
@@ -100,8 +103,6 @@ $(document).ready(function () {
     });
 
     $("[data-fancybox]").fancybox();
-
-    
 
     $(".portfolio-section__filter-a").click(function() { // if we want to use id tag then use #id instead of .class
 
@@ -159,6 +160,7 @@ $(document).ready(function () {
     		body.removeClass("fixedNav");
     	}
     }
+
 
 });
 
