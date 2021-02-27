@@ -6,6 +6,24 @@ Main goal of this website was to learn each of the above features.
 
 ## Screenshots
 
+### Slides Section
+!["Screenshot of Slides Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_slides.png?raw=true)
+
+### About Section
+!["Screenshot of About Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_about.png?raw=true)
+
+### Skills Section
+!["Screenshot of Skills Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_skills.png?raw=true)
+
+### Stats Section
+!["Screenshot of Stats Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_stats.png?raw=true)
+
+### Contact Section
+!["Screenshot of Contact Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_contact.png?raw=true)
+
+### Portfolio Section
+!["Screenshot of Portfolio Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_photos.png?raw=true)
+
 ## Dependencies
 
 - Owl Carousel
