@@ -5,23 +5,31 @@
 	}
 
 	.card {
-		background: #222;
+		background: $mainRed;
 		border: 2px solid $mainRed;
-		color: rgba(250, 250, 250, 0.8);
+		color: #fff;
 		margin-bottom: 2rem;
 	}
 
+	.card-img {
+		overflow: hidden;
+	}
+
+	.card-img img {
+		transition: all 1.5s ease;
+	}
+
+	.card-img:hover img {
+		transform: scale(1.25);
+	}
+
 	.card-btn {
-		border: 5px solid;
-		border-image-slice: 1;
 		text-decoration: none;
 		transition: all .4s ease;
 	}
 	
 	.card-btn:hover, .card-btn:focus {
-		border: 5px solid #fff; 
 		box-shadow: #222 1px 0 10px;
-		text-decoration: underline;
 	}
 
 }
