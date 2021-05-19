@@ -4,33 +4,33 @@
 		text-align: center;
 	}
 
-	.card {
+	&__card {
 		background-color: $mainRed;
 		border: 2px solid $mainRed;
 		color: #fff;
 		margin-bottom: 2rem;
 	}
 
-	.card-img {
+	&__card-img {
 		overflow: hidden;
 	}
 
-	.card-img img {
+	&__card-img img {
 		transition: all 1.5s ease;
 	}
 
-	.card-img:hover img {
+	&__card-img:hover img {
 		transform: scale(1.25);
 	}
 
-	.card-btn {
+	&__card-btn {
 		color: #fff;
 		padding: 1em;
 		border-radius: .95em;
 		transition: all .4s ease;
 	}
 	
-	.card-btn:hover, .card-btn:focus {
+	&__card-btn:hover, .card-btn:focus {
 		background-color: #fff;
 		color: $mainRed;
 		text-decoration: none;
