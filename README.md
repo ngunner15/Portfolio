@@ -16,7 +16,7 @@ Implements webpack --config webpack.config.js
 
 Runs the app in a development server port - 4000.
 
-### `npm build`
+### `npm run build`
 
 Builds dist folder for Netlify servers to host this website.
 
