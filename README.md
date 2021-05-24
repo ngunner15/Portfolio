@@ -4,6 +4,22 @@ My website made to showcase my skills in Front-End Web Development. Used Webpack
 
 Main goal of this website was to learn each of the above features.
 
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Implements webpack --config webpack.config.js
+
+### `npm run dev`
+
+Runs the app in a development server port - 4000.
+
+### `npm build`
+
+Builds dist folder for Netlify servers to host this website.
+
 ## Screenshots
 
 ### Slides Section
