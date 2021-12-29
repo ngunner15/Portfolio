@@ -147,6 +147,9 @@ $(document).ready(function () {
     	}
     }
 
+		var date = new Date();
+		var year = date.getFullYear();
+		$('#copyright-year')[0].innerText = year;
 
 });
 
