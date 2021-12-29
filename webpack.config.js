@@ -4,7 +4,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const fse = require('fs-extra')
-//const webpack = require('webpack')
+const webpack = require('webpack')
 const postCSSPlugins = [
 	require('postcss-import'),
 	require('postcss-simple-vars'),
