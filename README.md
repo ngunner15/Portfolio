@@ -37,8 +37,8 @@ Builds dist folder for Netlify servers to host this website.
 ### Contact Section
 !["Screenshot of Contact Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_contact.png?raw=true)
 
-### Portfolio Section
-!["Screenshot of Portfolio Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_photos.png?raw=true)
+### Project Section
+!["Screenshot of Project Section"](https://github.com/ngunner15/Portfolio/blob/master/app/screenshots/portfolio_project.png?raw=true)
 
 ## Dependencies
 
